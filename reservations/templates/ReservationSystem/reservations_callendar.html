@@ -1,0 +1,164 @@
+{% extends 'ReservationSystem/base.html' %}
+
+
+{% block content %}
+
+<!-- styles for table -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'ReservationSystem/table_stylesheet.css' %}">
+
+<div class="text2"> Zajętość sal </div>
+</br></br></br></br>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<center><div id="choose_panel">
+
+<div class="choose">
+  <label for="building">Budynek:</label></br>
+  <select name="building" id="building">
+    <option>WA</option>
+    <option>WBiŚ</option>
+    <option>WE</option>
+    <option>WI</option>
+    <option>WIZ</option>
+    <option>WM</option>
+  </select>
+</div>
+
+<div class="choose">  
+  <label for="room_type">Pomieszczenie:</label></br>
+  <select name="room_type" id="room_type">
+    <option>laboratorium</option>
+    <option>sala ćwiczeniowa</option>
+    <option>aula</option>
+    <option>pracownia komputerowa</option>
+  </select>
+</div>
+  
+<div class="choose">
+  <label for="room_number">Numer:</label></br>
+  <select name="room_number" id="room_number">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
+</div>
+  
+<div class="choose">  
+  <label for="date">Data:</label></br>
+  <select name="date" id="date">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
+</div>
+  
+</div></center>
+  
+  
+<table id="callendar">
+  <tr>
+	<th>Godziny:</th>
+    <th>Poniedziałek</th>
+    <th>Wtorek</th>
+    <th>Środa</th>
+    <th>Czwartek</th>
+    <th>Piątek</th>
+    <th>Sobota</th>
+    <th>Niedziela</th>
+  </tr>
+  <!-- zamienić na wypisywanie z bazy  -->
+  <tr>
+    <td>09:00</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>11:00</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>13:00</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>15:00</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>17:00</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>19:00</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>21:00</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+</table>
+
+
+<div class="room_details">
+	<h2>Wyposażenie pokoju:<h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+	nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+	reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+	pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+	 qui officia deserunt mollit anim id est laborum.<p>
+</div>
+
+{% endblock %}

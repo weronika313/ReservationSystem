@@ -1,0 +1,48 @@
+/* header of page */
+
+p {
+  color: #ffffff;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+.text2{
+	background-color: #ff3300;
+	color: #12263A;
+	float: left;
+	font-weight: bold;
+	font-size: 22px;
+	padding: auto;
+	width: 90%;
+}
+
+
+label {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+select {
+	width: 15vw;
+}
+
+.choose {
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+	padding: auto;
+	margin: 30px;
+}
+
+
+#choose_panel {
+  margin: 30px, 0;
+  padding: 40px, 8px;
+  width: 90%;
+}

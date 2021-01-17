@@ -1,0 +1,87 @@
+/* header of page */
+
+p {
+  color: #ffffff;
+}
+
+
+.text2{
+	background-color: #4CCF50;
+	color: #12263A;
+	float: left;
+	font-weight: bold;
+	font-size: 22px;
+	padding: auto;
+	width: 90%;
+}
+
+
+label {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+select {
+	width: 15vw;
+}
+
+.choose {
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+	padding: auto;
+	margin: 30px;
+}
+
+#choose_panel {
+  margin: 30px, 0;
+  padding: 40px, 8px;
+  width: 90%;
+}
+
+
+#callendar {
+  margin: auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#callendar td, #callendar th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#callendar tr:nth-child(even){background-color: #f2f2f2;}
+
+#callendar tr:nth-child(odd){background-color: #e2e2e2;}
+
+#callendar td:first-child {background-color: #4CCF50;}
+
+#callendar tr:hover {background-color: #ddd;}
+
+#callendar th {
+  width: 11.25vw;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CCF50;
+  color: #12263A;
+}
+
+
+.room_details {
+  margin: auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+.room_details h2 {
+  color: #ffffff;
+  font-size: 20px;
+}
+.room_details p {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 15px;
+}

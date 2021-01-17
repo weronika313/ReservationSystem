@@ -1,0 +1,97 @@
+/* header of page */
+
+p {
+  color: #ffffff;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.text2{
+	background-color: #ffcc00;
+	color: #12263A;
+	float: left;
+	font-weight: bold;
+	font-size: 22px;
+	padding: auto;
+	width: 90%;
+}
+
+
+label {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+}
+
+select {
+	width: 15vw;
+	float: left;
+}
+
+.choose {
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+	padding: auto;
+	margin: 10px;
+}
+
+
+#reservation td, #reservation th {
+  width: 45vw;
+}
+
+#reservation {
+  margin: auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#reservation th {
+  width: 11.25vw;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: #ffffff;
+}
+
+
+#callendar td, #callendar th {
+  border: 1px solid #ddd;
+  padding: 2px;
+  color: #000000;
+}
+
+#callendar tr:nth-child(even){background-color: #f2f2f2;}
+
+#callendar tr:nth-child(odd){background-color: #e2e2e2;}
+
+#callendar tr:hover {background-color: #ddd;}
+
+#callendar th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: #ffcc00;
+  color: #12263A;
+}
+
+.room_details {
+  margin: auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+.room_details h2 {
+  color: #ffffff;
+  font-size: 20px;
+}
+.room_details p {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 15px;
+}

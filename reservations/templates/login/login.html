@@ -1,0 +1,33 @@
+{% extends 'ReservationSystem/base.html' %}
+
+{% block content %}
+
+<!-- styles for login -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'login/login.css' %}">
+
+
+<div class="text2"> Logowanie </div>
+</br></br></br>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>  
+
+<center><div id="login_panel">
+
+<form action="/srsly/">
+  <label for="fname">Email:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Hasło:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Zaloguj">
+</form>
+
+</div></center>
+
+
+
+{% endblock %}
+
+

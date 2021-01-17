@@ -1,0 +1,170 @@
+{% extends 'ReservationSystem/base.html' %}
+
+{% block content %}
+
+<!-- styles for login -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'ReservationSystem/room_reservation.css' %}">
+
+<div class="text2"> Rezerwacja sal </div>
+</br></br></br>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>  
+
+<center>
+<h2>Szczegóły rezerwacji pomieszczenia:</h2>
+</center>
+
+<table id="reservation">
+
+	<tr><td>
+	<table id="inner_table_1">
+
+		<tr>
+			<td>
+			<div class="choose">
+			  <label for="building">Budynek:</label></br>
+			  <select name="building" id="building">
+				<option>WA</option><option>WBiŚ</option><option>WE</option>
+				<option>WI</option><option>WIZ</option><option>WM</option>
+			  </select>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			<div class="choose">  
+			  <label for="room_type">Pomieszczenie:</label></br>
+			  <select name="room_type" id="room_type">
+				<option>laboratorium</option>
+				<option>sala ćwiczeniowa</option>
+				<option>aula</option>
+				<option>pracownia komputerowa</option>
+			  </select>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+		<td>
+			<div class="choose">
+			  <label for="room_number">Numer:</label></br>
+			  <select name="room_number" id="room_number">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			  </select>
+			</div>
+		</td>
+		</tr>
+
+
+		<tr>
+		<td>
+			<div class="choose">
+			  <label for="amount">Ilość rezerwowanych miejsc:</label></br>
+			  <select name="amount" id="amount">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			  </select>
+			</div>
+		</td>
+		</tr>
+		  
+
+
+		<tr>
+		<td>  
+			<div class="choose">  
+			  <label for="date">Data:</label></br>
+			  <select name="date" id="date">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			  </select>
+			</div>
+		</td>
+		</tr>
+	</table>
+	</td>
+	
+	<td>
+		<h3>Dostępność w godzinach:</h3>
+		<table id="callendar">
+			<tr><th>Godzina:</th> <th>Liczba wolnych miejsc:</th></tr>
+			<tr><td>00:00 - 00:00</td> <td>0/0</td></tr>
+			<tr><td>00:00 - 00:00</td> <td>0/0</td></tr>
+			<tr><td>00:00 - 00:00</td> <td>0/0</td></tr>
+			<tr><td>00:00 - 00:00</td> <td>0/0</td></tr>
+			<tr><td>00:00 - 00:00</td> <td>0/0</td></tr>
+			<tr><td>00:00 - 00:00</td> <td>0/0</td></tr>
+			<tr><td>00:00 - 00:00</td> <td>0/0</td></tr>
+			<tr><td>00:00 - 00:00</td> <td>0/0</td></tr>
+		</table>
+		
+		<div class="choose">  
+			  <label for="date">Wybrane godziny:</label></br>
+			  <select name="date" id="date">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			  </select>
+		</div>
+		
+	</td>
+	</tr>	
+</table>
+
+
+<div class="room_details">
+	<h2>Wyposażenie pokoju:<h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+	nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+	reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+	pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+	qui officia deserunt mollit anim id est laborum.<p>
+</div>
+
+</br>
+
+
+<center>
+<h2>Szczegóły rezerwacji sprzętu:</h2>
+</center>
+
+<center>
+<h3>MIEJSCE NA WYBÓR REZERWACJI SPRZĘTÓW</h3>
+</center>
+		
+</br>
+<div style="float:right">
+<center>
+<h3>Złóż rezerwację:</h3>
+<button class="button" onclick="location.href = '/ReservationSystem/'">Zarezerwuj</button>
+</center>
+</div>
+</br></br>
+</br></br>
+</br></br>
+
+{% endblock %}
+
+

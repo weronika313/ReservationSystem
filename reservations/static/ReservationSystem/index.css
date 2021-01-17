@@ -1,0 +1,17 @@
+/* header of page */
+
+.button {
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  margin: 1vw 1vw;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.button1 {background-color: #0066ff;} /* Blue */
+.button2 {background-color: #4CCF50;} /* Green */
+.button3 {background-color: #ffcc00;} /* Yellow */
+.button4 {background-color: #ff3300;} /* Red */

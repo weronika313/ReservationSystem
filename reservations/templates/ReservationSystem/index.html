@@ -1,0 +1,21 @@
+{% extends 'ReservationSystem/base.html' %}
+
+{% block content %}
+
+<!-- styles for table -->
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'ReservationSystem/index.css' %}">
+
+</br>
+<h2>Wybierz, co chcesz zrobić:</h2>
+</br>
+
+<center>
+<button class="button button1" onclick="location.href = '/login'">Logowanie</button>
+<button class="button button2" onclick="location.href = '/reservations_callendar'">Zajętość sal</button>
+<button class="button button3" onclick="location.href = '/room_reservation'">Rezerwacja sal</button>
+<button class="button button4" onclick="location.href = '/dorm_reservation'">Rezerwacja akademików</button>
+</center>
+
+{% endblock %}

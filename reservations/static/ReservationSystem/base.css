@@ -1,0 +1,28 @@
+/* header of page */
+
+.text{
+	background-color: #ffffff;
+	color: #12263A;
+	float: right;
+	font-weight: bold;
+	font-size: 25px;
+	padding: auto;
+	width: 90%;
+}
+
+
+body {
+	background-color: #12263A;
+}
+
+h1 {
+	color: #ffffff;
+}
+
+h2 {
+	color: #ffffff;
+}
+
+h3 {
+	color: #ffffff;
+}
