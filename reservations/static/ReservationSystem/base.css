@@ -1,6 +1,6 @@
 /* header of page */
 
-.text{
+.text {
 	background-color: #ffffff;
 	color: #12263A;
 	float: right;
@@ -12,7 +12,10 @@
 
 
 body {
-	background-color: #12263A;
+	/* background-color: #12263A; */
+	background-color: whitesmoke;
+	padding: 0;
+	margin: 0;
 }
 
 h1 {
@@ -25,4 +28,31 @@ h2 {
 
 h3 {
 	color: #ffffff;
+}
+
+i {
+	font-size: 2em !important;
+	display: block;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #12263A;
+	position: sticky;
+}
+
+#login {
+	background-color: goldenrod;
+	border-radius: 7px;
+	margin-left: 20%
+}
+
+nav>a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 1vh 2vw;
 }

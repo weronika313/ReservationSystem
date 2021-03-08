@@ -5,13 +5,23 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="{% static 'ReservationSystem/base.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta charset="UTF-8">
 	<title>srsly</title>
 </head>
 
-<header>
-	
+<header style="background-color: green;">
+	<h1 style="text-align: center; margin: 0; padding: 0;">Jakiś nagłówek</h1>
+	<h2 style="text-align: center; margin: 0; padding: 0;">Jakiś nagłówek pt 2</h1>
 </header>
+
+<nav>
+	<a href="/"><i class="material-icons">home</i></a>
+	<a href="/room_reservation">Sale Zajęciowe</a>
+	<a href="/dorm_reservation">Pokoje w Akademikach</a>
+	<a href="/reservations_callendar">Rezerwacje</a>
+	<a id="login" href="/login">Logowanie</a>
+</nav>
 
 <div class="text"> System rezerwacji sal i akademików </div>
 </br>
