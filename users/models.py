@@ -12,9 +12,9 @@ class CustomUser(AbstractUser):
         ('teacher', 'Teacher')
     )
 
-    status = models.CharField(max_length=12,
+    type = models.CharField(max_length=12,
                               choices=USER_TYPES,
-                              default='waiting')
+                              default='student')
 
     def __str__(self):
         return self.username
