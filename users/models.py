@@ -2,17 +2,19 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.utils.translation import ugettext_lazy as _
 
-from .managers import CustomUserManager
 
 
 class CustomUser(AbstractUser):
-    username = None
-    email = models.EmailField(_('email address'), unique=True)
+    USER_TYPES = (
+        ('coordinator', 'Coordinator'),
+        ('room_keeper', 'Room Keeper'),
+        ('student', 'Student'),
+        ('teacher', 'Teacher')
+    )
 
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
-
-    objects = CustomUserManager()
+    type = models.CharField(max_length=12,
+                              choices=USER_TYPES,
+                              default='student')
 
     def __str__(self):
-        return self.email
+        return self.username
